@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- FIXED NAV -->
+
+    <nav
+      class="bg-secondary text-white fixed-nav flex flex-row justify-between items-center text-sm fixed z-50 w-full shadow-md top-0 md:py-4 px-4 gap-2"
+    >
+      <div class="h-12">
+        <img
+          src="./img/logos/LAFS-logo-full.png"
+          alt="Logo"
+          class="object-fit w-full h-full"
+        />
+      </div>
+      <div class="flex flex-row grow justify-center max-w-[1000px]">
+        <ul
+          class="navbar flex flex-row grow justify-evenly font-medium text-lighterGray text-center sm:text-xs break-words lg:text-base gap-x-2 cursor-pointer"
+        >
+          <li>
+            <a href="#hero">Inicio</a>
+          </li>
+          <li>
+            <a href="#about">Sobre nosotros</a>
+          </li>
+          <li>
+            <a href="#servicios">Servicios</a>
+          </li>
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+          <li>
+            <a href="#sucursales">Ubicación</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <button
+          type="button"
+          class="bg-fourth text-white py-2 px-4 font-bold text-lg flex gap-2 items-center justify-center w-full hover:bg-secondary hover:border-fourth hover:border-1 transition-all ease-in hover:border-2"
+        >
+          <div>
+            <img src="./img/icons/phone-wt.png" alt="Ícono llamada" class="" />
+          </div>
+          <span>+1 (787) 360 6998</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE NAV -->
+
+    <nav
+      class="mobile-nav flex-row justify-between items-center text-sm bg-secondary z-50 w-full shadow-md top-0 flex p-4 fixed"
+    >
+      <div class="flex flex-row items-center justify-between text-sm w-full">
+        <div class="h-10">
+          <img
+            src="./img/logos/LAFS-logo-full.png"
+            class="object-contain h-10"
+            alt="Logo ícono"
+          />
+        </div>
+        <div class="flex items-center gap-2 h-10">
+          <div>
+            <button
+              type="button"
+              class="font-bold text-lg flex items-center hover:border-2 hover:border-fourth transition-all ease-in h-8 py-5"
+            >
+              <div class="text-lg text-darkGray cursor-pointer">
+                <img
+                  src="./img/icons/phone-yw.png"
+                  alt="Ícono llamada"
+                  class="object-contain h-fit"
+                />
+              </div>
+            </button>
+          </div>
+          <div class="text-lg text-darkGray cursor-pointer">
+            <img
+              src="./img/icons/bars-yw.png"
+              alt="Menú mobile"
+              class="object-contain h-fit"
+            />
+
+            <div
+              id="menu"
+              class="checked:flex flex-col justify-center absolute top-[115px] right-[0] w-1/2 hidden"
+            >
+              <ul
+                class="navbar flex flex-col justify-evenly font-medium text-lighterGray text-center divide-y z-50 bg-white cursor-pointer"
+              >
+                <li>
+                  <a href="#hero">Inicio</a>
+                </li>
+                <li>
+                  <a href="#about">Sobre nosotros</a>
+                </li>
+                <li>
+                  <a href="#servicios">Servicios</a>
+                </li>
+                <li>
+                  <a href="#contacto">Contacto</a>
+                </li>
+                <li>
+                  <a href="#sucursales">Ubicacion</a>
+                </li>
+                <li>
+                  <a href="#horarios">Horarios</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BANNER PROMOCIONAL -->
+
+    <section>
+      <div
+        class="w-full bg-mediumGray text-white text-sm sm-banner flex justify-between items-center pt-8 pb-4 md:pt-8 lg:pt-6 px-4 absolute top-[70px] z-30"
+      >
+        <div>
+          <img src="./img/icons/arrow-left-wt.png" alt="Arrow left" />
+        </div>
+        <p class="text-center">
+          Hasta el <strong>70%</strong> de <strong>descuento.</strong>
+        </p>
+        <div>
+          <img src="./img/icons/arrow-right-wt.png" alt="Arrow right" />
+        </div>
+      </div>
+    </section>
+
+    <!-- HERO -->
+
+    <section
+      id="hero"
+      class="h-full text-center flex flex-col items-center banner justify-between pt-24 md:pt-16"
+    >
+      <div
+        class="flex flex-col justify-between items-center w-[80%] md:w-2/3 max-w-[1000px] pt-32"
+      >
+        <div>
+          <img src="./img/venta-navidad.png" alt="Letras rojas" />
+        </div>
+        <div class="w-full flex flex-col items-center">
+          <div class="mb-6 w-full">
+            <h1 class="font-semibold text-2xl leading-12">
+              Hasta el<br />
+              <strong class="text-[64px] text-[#D62744]">70%</strong><br />
+              DE DESCUENTO
+            </h1>
+          </div>
+          <div
+            class="flex flex-row items-center justify-center w-[80%] md:w-[40%] max-w-[342px]"
+          >
+            <button
+              type="button"
+              class="bg-darkGray text-white py-2 px-4 rounded-full font-bold text-lg flex gap-2 items-center justify-center w-full hover:bg-black transition-all ease-in"
+            >
+              Contáctanos
+            </button>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./img/regalos.png"
+            alt="Regalos"
+            class="md:inline-block md:mt-8"
+            hidden
+          />
+        </div>
+        <div class="w-[110%] flex justify-center">
+          <img src="./img/presents.png" alt="Regalos" class="md:hidden mt-8" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+
+    <section id="about">
+      <div class="bg-primary flex flex-col items-center py-16">
+        <div class="flex flex-col items-center w-[90%] md:w-1/2 max-w-[800px]">
+          <div class="flex justify-center h-16 mb-8">
+            <img
+              src="./img/logos/LAFS-logo-full.png"
+              alt="Logotipo Nitza's Jewerly"
+              class="object-contain"
+            />
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <div
+              class="text-white flex flex-col text-center font-semibold gap-4"
+            >
+              <p>
+                En Loyal Accounting & Financial Services somos más que
+                contadores. Constuimos relaciones sólidas y ofrecemos soluciones
+                financieras que se adaptan a tu estilo..
+              </p>
+              <p>
+                Ya seas emprendedor, una pequeña empresa en crecimiento, estamos
+                aquí para impulsar tu éxito.
+              </p>
+              <p><strong>¡Trabajar para ti es nuestra pasión!</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+
+    <section id="servicios" class="flex justify-center bg-darkGray text-white">
+      <div
+        class="flex flex-col items-center w-[90%] md:w-9/12 justify-center py-20 max-w-[800px]"
+      >
+        <h2 class="font-bold text-center mb-10 text-2xl md:text-5xl">
+          Servicios
+        </h2>
+        <div
+          class="flex flex-wrap justify-evenly sm:justify-center md:justify-evenly gap-20"
+        >
+          <!-- CARD 01 -->
+
+          <div
+            class="flex flex-col justify-center items-center text-center mb-4"
+          >
+            <div class="bg-gray-300 rounded-full w-32 h-32 mb-4">
+              <img
+                src="img/departamentos/DD01s.png"
+                alt="Planillas"
+                class="object-cover h-full w-full"
+              />
+              <div>
+                <h4 class="font-semibold mt-4">Planillas</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 02 -->
+
+          <div
+            class="flex flex-col justify-center items-center text-center mb-4"
+          >
+            <div class="bg-gray-300 rounded-full w-32 h-32 mb-4">
+              <img
+                src="img/departamentos/DD02s.png"
+                alt="Planillas de IVU"
+                class="object-cover h-full w-full"
+              />
+              <div>
+                <h4 class="font-semibold mt-4">Planillas de IVU</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 03 -->
+
+          <div
+            class="flex flex-col justify-center items-center text-center mb-4"
+          >
+            <div class="bg-gray-300 rounded-full w-32 h-32 mb-4">
+              <img
+                src="img/departamentos/DD03s.png"
+                alt="Ciclo de contabilidad"
+                class="object-cover h-full w-full"
+              />
+              <div>
+                <h4 class="font-semibold mt-4">Ciclo de contabilidad</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 04 -->
+
+          <div
+            class="flex flex-col justify-center items-center text-center mb-4"
+          >
+            <div class="bg-gray-300 rounded-full w-32 h-32 mb-4">
+              <img
+                src="img/departamentos/DD04s.png"
+                alt="Estados financieross"
+                class="object-cover h-full w-full"
+              />
+              <div>
+                <h4 class="font-semibold mt-4">Estados financieross</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 05 -->
+
+          <div
+            class="flex flex-col justify-center items-center text-center mb-4"
+          >
+            <div class="bg-gray-300 rounded-full w-32 h-32 mb-4">
+              <img
+                src="img/departamentos/DD05s.png"
+                alt="Trimestraless"
+                class="object-cover h-full w-full"
+              />
+              <div>
+                <h4 class="font-semibold mt-4">Trimestrales</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 06 -->
+
+          <div
+            class="flex flex-col justify-center items-center text-center mb-4"
+          >
+            <div class="bg-gray-300 rounded-full w-32 h-32 mb-4">
+              <img
+                src="img/departamentos/DD06s.png"
+                alt="Consultoría"
+                class="object-cover h-full w-full"
+              />
+              <div>
+                <h4 class="font-semibold mt-4">Consultoría</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 07 -->
+
+          <div
+            class="flex flex-col justify-center items-center text-center mb-4"
+          >
+            <div class="bg-gray-300 rounded-full w-32 h-32 mb-4">
+              <img
+                src="img/departamentos/DD07s.png"
+                alt="SURI"
+                class="object-cover h-full w-full"
+              />
+              <div>
+                <h4 class="font-semibold mt-4">SURI</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+
+    <section class="flex items-center py-16 flex-col bg-[#FAC450]">
+      <div class="w-[90%] md:w-full flex flex-col items-center max-w-[1000px]">
+        <h2 class="font-bold text-center text-2xl md:text-5xl">
+          Lo que piensan nuestros clientes
+        </h2>
+        <div class="md:hidden">
+          <div class="testimonial-container py-16">
+            <!-- CARD 01 -->
+
+            <div
+              class="flex flex-row gap-4 sm:flex-wrap items-centers w-full justify-center lg:justify-between"
+            >
+              <div
+                class="`w-full md:w-[30%] min-w-[280px] flex flex-col items-center gap-4 p-6 bg-white rounded-3xl shadow-lg h-full"
+              >
+                <div class="flex flex-col items-center text-center gap-4">
+                  <p class="text-gray-500">
+                    <strong>"</strong>Excelente servicio, es una persona
+                    responsable y rápida y la recomiendo al 100%<strong
+                      >"</strong
+                    >
+                  </p>
+                  <h4 class="font-semibold">Yomayra Rodriguez</h4>
+                  <div>
+                    <img
+                      src="img/icons/Facebook-color-mini@2x.png"
+                      alt="Facebook logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 02 -->
+
+            <div
+              class="flex flex-row gap-4 sm:flex-wrap items-centers w-full justify-center lg:justify-between"
+            >
+              <div
+                class="`w-full md:w-[30%] min-w-[280px] flex flex-col items-center gap-4 p-6 bg-white rounded-3xl shadow-lg h-full"
+              >
+                <div class="flex flex-col items-center text-center gap-4">
+                  <p class="text-gray-500">
+                    <strong>"</strong>Excelente servicio, rápido y
+                    confiable<strong>"</strong>
+                  </p>
+                  <h4 class="font-semibold">Luis Hernandez</h4>
+                  <div>
+                    <img
+                      src="img/icons/Facebook-color-mini@2x.png"
+                      alt="Facebook logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 03 -->
+
+            <div
+              class="flex flex-row gap-4 sm:flex-wrap items-centers w-full justify-center lg:justify-between"
+            >
+              <div
+                class="`w-full md:w-[30%] min-w-[280px] flex flex-col items-center gap-4 p-6 bg-white rounded-3xl shadow-lg h-full"
+              >
+                <div class="flex flex-col items-center text-center gap-4">
+                  <p class="text-gray-500">
+                    <strong>"</strong>Excelente servicios y
+                    confianzas,recomendado mil por mil 👏👏👏👍👍💪💪<strong
+                      >"</strong
+                    >
+                  </p>
+                  <h4 class="font-semibold">Licda Yleana Silva Rodriguez</h4>
+                  <div>
+                    <img
+                      src="img/icons/Facebook-color-mini@2x.png"
+                      alt="Facebook logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center mb-8">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <!-- PARA ESCRITORIO -->
+
+        <div
+          class="hidden md:flex flex-row gap-4 sm:flex-row sm:flex-wrap items-center md:items-start py-16 w-full justify-center"
+        >
+          <!-- CARD 01 -->
+
+          <div
+            class="w-full md:w-[30%] min-w-[280px] flex flex-col items-center gap-4 p-6 bg-white rounded-3xl shadow-lg h-full"
+          >
+            <div
+              class="flex flex-row gap-4 sm:flex-wrap items-centers w-full justify-center lg:justify-between"
+            >
+              <div class="h-32 w-32 shadow-xl rounded-full">
+                <img
+                  src="./img/RR01s.png"
+                  alt="Yomayra Rodriguez"
+                  class="object-cover"
+                />
+              </div>
+
+              <div class="flex flex-col items-center text-center gap-4">
+                <p class="text-gray-500">
+                  <strong>"</strong>Excelente servicio, es una persona
+                  responsable y rápida y la recomiendo al 100%<strong>"</strong>
+                </p>
+                <h4 class="font-semibold">Yomayra Rodriguez</h4>
+                <div>
+                  <img
+                    src="./img/icons/Facebook-color-mini@2x.png"
+                    alt="Facebook logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 02 -->
+
+          <div
+            class="flex flex-row gap-4 sm:flex-wrap items-centers justify-center w-[30%] min-w-[280px]"
+          >
+            <div
+              class="w-full md:w-[30%] min-w-[280px] flex flex-col items-center gap-4 p-6 bg-white rounded-3xl shadow-lg h-full"
+            >
+              <div class="h-32 w-32 shadow-xl rounded-full">
+                <img
+                  src="./img/RR02s.png"
+                  alt="Luis Hernandez"
+                  class="object-coverl"
+                />
+              </div>
+
+              <div class="flex flex-col items-center text-center gap-4">
+                <p class="text-gray-500">
+                  <strong>"</strong>Excelente servicio, rápido y
+                  confiable<strong>"</strong>
+                </p>
+                <h4 class="font-semibold">Luis Hernandez</h4>
+                <div>
+                  <img
+                    src="./img/icons/Facebook-color-mini@2x.png"
+                    alt="Facebook logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 03 -->
+
+          <div style="width: 30%" class="w-[30%] min-w-[280px]">
+            <div
+              class="w-full md:w-[30%] min-w-[280px] flex flex-col items-center gap-4 p-6 bg-white rounded-3xl shadow-lg h-full"
+            >
+              <div class="h-32 w-32 shadow-xl rounded-full">
+                <img
+                  src="./img/RR03s.png"
+                  alt="Licda Yleana Silva Rodriguez"
+                  class="object-cover"
+                />
+              </div>
+
+              <div class="flex flex-col items-center text-center gap-4">
+                <p class="text-gray-500">
+                  <strong>"</strong>Excelente servicios y confianzas,recomendado
+                  mil por mil 👏👏👏👍👍💪💪<strong>"</strong>
+                </p>
+                <h4 class="font-semibold">Licda Yleana Silva Rodriguez</h4>
+                <div>
+                  <img
+                    src="./img/icons/Facebook-color-mini@2x.png"
+                    alt="Facebook logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section id="contacto" class="flex flex-col bg-secondary">
+      <div
+        class="flex flex-col md:flex-row py-20 w-[90%] md:w-9/12 place-self-center gap-8 max-w-[1000px] text-white"
+      >
+        <div class="flex flex-col gap-8 md:w-1/2">
+          <h2
+            class="font-bold md:mb-10 text-2xl text-center md:text-4xl md:text-left"
+          >
+            ¿Necesitas algo?
+            <br />
+            ¡Envíanos un mensaje!
+          </h2>
+          <div class="font-semibold md:inline-block" hidden>
+            <div class="flex items-center mb-7">
+              <img src="./img/icons/call-line-wt.png" alt="Icon call" />
+              <div class="flex flex-col gap-y-2 ms-4">
+                <p>+1 (787) 360 6998</p>
+              </div>
+            </div>
+            <div class="flex items-center mb-7">
+              <img src="./img/icons/clock-wt.png" alt="Icon clock" />
+              <div class="flex flex-col ms-4 gap-y-4">
+                <p><strong>Horarios:</strong></p>
+                <p>Lunes a domingo: 10:00am - 6:00pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:w-1/2 gap-4 w-full">
+          <!-- FORMULARIO -->
+
+          <form class="flex flex-col gap-4 h-full text-neutralGray">
+            <div class="flex flex-col md:flex-row gap-4 w-full">
+              <div class="field md:w-1/2">
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  required
+                  maxlength="32"
+                  pattern="[A-Za-z\s]{1,32}"
+                  title="Nombres"
+                  class="invalid:border-pink-500 invalid:text-pink-600"
+                />
+                <label
+                  htmlFor="firstName"
+                  title="Nombres"
+                  data-title="Nombres"
+                ></label>
+                <span class="error">
+                  Este campo no puede estar vacío, e.g. John
+                </span>
+              </div>
+              <div class="field md:w-1/2">
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  maxlength="32"
+                  pattern="[A-Za-z]{1,32}"
+                  required
+                  class="invalid:border-pink-500 invalid:text-pink-600"
+                />
+                <label
+                  htmlFor="lastName"
+                  title="Apellidos"
+                  data-title="Apellidos"
+                ></label>
+                <span class="error"
+                  >Este campo no puede estar vacío, e.g. Doe</span
+                >
+              </div>
+            </div>
+
+            <div class="col-span-2 field">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="invalid:border-pink-500 invalid:text-pink-600"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                required
+              />
+              <label
+                htmlFor="email"
+                title="Correo electrónico"
+                data-title="Correo electrónico"
+                class="peer-invalid:text-pink-600"
+              ></label>
+              <span class="error">
+                Este campo no puede estar vacío, e.g. correo@ejemplo.com
+              </span>
+            </div>
+
+            <div class="col-span-2 field">
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                class="focus:invalid:border-pink-500 invalid:text-pink-600"
+                pattern="^\+[1-9]{1}[0-9]{3,14}$"
+                required
+              />
+
+              <label
+                htmlFor="phone"
+                title="Número telefónico"
+                data-title="Número telefónico"
+              ></label>
+              <span class="error">
+                Este campo no puede estar vacío, e.g. +27 123 4567
+              </span>
+            </div>
+            <div class="col-span-2 row-span-6 h-full field">
+              <textarea
+                name="message"
+                id="message"
+                required
+                class="h-full placeholder:pt-2 focus:invalid:border-pink-500 invalid:text-pink-600"
+              ></textarea>
+
+              <label
+                htmlFor="message"
+                title="Escribe un mensaje"
+                data-title="Escribe un mensaje"
+              ></label>
+            </div>
+          </form>
+
+          <div
+            class="mt-4 opacity-50 transition-opacity hover:opacity-100 hover:ease-in"
+          >
+            <button
+              type="submit"
+              class="bg-fourth text-white py-2 px-4 font-bold text-lg flex gap-2 items-center justify-center w-full transition-all ease-in"
+            >
+              Enviar mensaje
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUCURSALES -->
+
+    <section id='sucursales' class="flex justify-center">
+      <div class="w-full md:w-9/12 flex flex-col md:flex-row justify-center py-16 gap-16">
+        
+        <h2 class="font-bold text-2xl text-center md:text-left md:text-5xl py-4 md:hidden">¿Tienes dudas? ¡Visitanos!</h2>
+
+        <div class="md:w-1/2">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121182.60492339502!2d-66.13535950581992!3d18.349273243825213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c0342a426e0b519%3A0x1922abaaa326a9d0!2sSan%20Juan%2C%2000926%2C%20Puerto%20Rico!5e0!3m2!1sen!2sus!4v1704294975393!5m2!1sen!2sus" width="100%" height="470" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="md:w-1/2 text-darkGray flex-col justify-center gap-12 hidden md:flex ms-4">
+          <h2 class="font-bold text-2xl text-center md:text-left md:text-5xl">¿Tienes dudas? ¡Visitanos!</h2>
+          <p class="text-2xl ">San Juan, Puerto Rico,00926</p>
+        </div>
+        <div class='w-[90%] text-lg p-4 md:hidden'>
+          <p class="font-bold">San Juan, Puerto Rico,00926</p>
+            <p>
+            Teléfono: +1 787-360-6998
+            </p>
+            
+          </div>
+      </div>
+    </section>
+
+    <!-- HORARIOS -->
+
+    <section id='horarios' class="bg-lightGray">
+      <div class="flex flex-col items-center text-[#797C94] gap-y-4 md:hidden text-lg font-semibold max-w-[1000px] py-16">
+          <p class="font-bold text-darkGray text-2xl">Horarios:</p>
+          <p>Lunes a Sábado: 9:00am - 5:00pm</p>
+          <p>Domingo: Cerrado</p>
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="flex justify-center bg-mediumGray">
+      <div class="flex flex-col items-center w-[90%] md:w-9/12 py-16 text-white max-w-[1000px]">
+          <h2 class="font-bold mb-10 text-2xl md:text-4xl">FAQs</h2>
+          <div class="divide-y w-full py-4">
+              
+            <!-- QUESTION 1 -->
+
+            <div>
+              <div class=" accordion flex justify-between py-6" >
+                <div class="font-semibold">¿En donde se encuentran ubicados?</div>
+                <button class="text-white text-2xl">+</button>
+              </div>
+              <div class="pb-4 text-white divide-y">Puedes encontrarnos en San Juan, Puerto Rico, 00926</div>
+            </div>
+
+            <!-- QUESTION 2 -->
+
+            <div>
+              <div class=" accordion flex justify-between py-6" >
+                <div class="font-semibold">¿Cómo puedo contactarlos?</div>
+                <button class="text-white text-2xl">+</button>
+              </div>
+              <div class="pb-4 text-white divide-y">“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</div>
+            </div>
+            
+             <!-- QUESTION 3 -->
+
+             <div>
+              <div class=" accordion flex justify-between py-6" >
+                <div class="font-semibold">¿Que servicios tienen?</div>
+                <button class="text-white text-2xl">+</button>
+              </div>
+              <div class="pb-4 text-white divide-y">“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</div>
+            </div>
+
+             <!-- QUESTION 4 -->
+
+             <div>
+              <div class=" accordion flex justify-between py-6" >
+                <div class="font-semibold">¿Con que tipo de asesorías cuentan?</div>
+                <button class="text-white text-2xl">+</button>
+              </div>
+              <div class="pb-4 text-white divide-y">“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</div>
+            </div>
+
+             <!-- QUESTION 5 -->
+
+             <div>
+              <div class=" accordion flex justify-between py-6" >
+                <div class="font-semibold">¿Me ayudan a llenar mi planilla?</div>
+                <button class="text-white text-2xl">+</button>
+              </div>
+              <div class="pb-4 text-white divide-y">“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</div>
+            </div>
+
+
+          </div>
+      </div>
+   </section>
+
+    <!-- FOOTER -->
+
+    <section
+      class="bg-darkGray flex flex-col justify-center items-center py-16"
+    >
+      <div
+        class="md:grid grid-cols-3 w-[90%] sm:w-3/5 place-items-center pb-16 max-w-[1000px]"
+      >
+        <div class="flex flex-col gap-6 w-full">
+          <div
+            class="justify-self-center self-center flex justify-center items-center"
+          >
+            <img
+              src="img/logos/LAFS-logo-white.png"
+              alt="Ícono del logo"
+              class="md:object-cover md:w-14"
+            />
+          </div>
+          <p class="text-white text-center">Tu dinero en manos fieles</p>
+          <div
+            class="text-white opacity-50 text-5xl flex flex-row justify-center mb-6 sm:mb-0"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-4 mb-4 sm:mb-0 text-white">
+          <h3 class="font-bold">Mapa del sitio</h3>
+          <ul class="grid gap-y-4 underline opacity-60">
+            <li class="sm:hidden"><a href="#hero">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#about">Acerca de nosotros</a></li>
+          </ul>
+        </div>
+        <div class="text-white opacity-60">
+          <ul class="grid gap-y-4 underline">
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#sucursales">Ubicación</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="opacity-50 w-[90%] md:w-3/5" />
+      <span
+        class="sm:text-center text-white opacity-60 pt-8 mb-8 w-[90%] md:w-3/5"
+        >2023, Loyalty Accounting & Financial Services Inc., Todos los derechos reservados.</span
+      >
+    </section>
+
+    
+
+
+  </body>
+</html>
